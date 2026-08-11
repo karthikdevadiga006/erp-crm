@@ -9,7 +9,8 @@ function required(name: string): string {
 }
 
 export const env = {
-  port: Number(process.env.PORT ?? 4000),
+  // Prefer numeric PORT from environment; fallback to 4000 for local development.
+  port: Number(process.env.PORT) || 4000,
   nodeEnv: process.env.NODE_ENV ?? "development",
   databaseUrl: required("DATABASE_URL"),
   jwtSecret: required("JWT_SECRET"),
