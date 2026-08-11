@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-line;
+  }
+  body {
+    @apply antialiased;
+  }
+  ::selection {
+    @apply bg-indigo/20;
+  }
+  :focus-visible {
+    outline: 2px solid theme("colors.indigo.DEFAULT");
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* The recurring "stamp" motif: status pills that read like a hand-stamped
+     mark on a shipping manifest rather than a soft SaaS badge. */
+  .stamp {
+    @apply inline-flex items-center gap-1.5 rounded border px-2 py-0.5 font-mono text-[11px] font-medium uppercase tracking-wider;
+    transform: rotate(-0.6deg);
+  }
+}

@@ -1,0 +1,67 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+backend/dist/
+frontend/dist/
+.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+# dotenv files (keep secrets out of git)
+.env
+.env.*.local
+.env.local
+
+# Prisma
+.prisma/
+**/.prisma/
+prisma/dev.db
+prisma/*.db
+prisma/migrations/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Docker
+docker-compose.override.yml
+
+# SSL / keys
+*.pem
+*.key
+*.crt
+
+# Misc
+.cache/
+*.tmp
+
+# Ignore local runtime artifacts
+/.DS_Store
+npm-debug.log
+
+# Ignore generated Prisma engine temp files
+**/.prisma/client/*.tmp
+**/.prisma/client/*.lock
