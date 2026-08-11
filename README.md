@@ -1,8 +1,6 @@
 # Mini ERP + CRM Operations Portal
 
-A wholesale/distribution back-office system: customer CRM, product & inventory
-management, and a sales challan flow with atomic stock control. Built for the
-Full Stack Developer case study.
+
 
 ## Stack
 
